@@ -453,6 +453,9 @@
 
 .holder {
     background-image: url(../images/travel-bg.png);
+    &.sleep {
+        background-image: url(../images/frangipani.png);
+    }
     background-position: bottom right;
     background-repeat: no-repeat;
     .slider-arrows {
@@ -474,9 +477,13 @@
         background-repeat: no-repeat;
         background-position: right center;
         padding-left: 132px;
+        background-size: contain;
         .descr__head {
             position: relative;
-            padding-right: 215px;
+            padding-right: 68px;
+            &.descr__head-sleep {
+                padding-right: 215px;
+            }
             img {
                 position: absolute;
                 right: 0;
@@ -486,12 +493,8 @@
                 position: absolute;
                 right: 0;
                 top: 0;
-                li {
-                    display: inline-block;
-                }
                 img {
                     position: static;
-                    margin-left: -25px;
                 }
             }
         }
