@@ -133,9 +133,9 @@
 }
 
 .menu-btn {
+    display: none;
     width: 60px;
     height: 60px;
-    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -150,10 +150,10 @@
     }
     &__line {
         height: 5px;
+        background-color: $green;
         + .menu-btn__line {
             margin-top: 5px;
         }
-        background-color: $green;
     }
 }
 
