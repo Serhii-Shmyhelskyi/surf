@@ -394,6 +394,7 @@
     height: 23px;
     background-color: $green;
     border-radius: 50%;
+    box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777);
 }
 
 .slider-dots__content {
@@ -412,7 +413,7 @@
         border-left: 12px solid transparent;
         border-right: 12px solid transparent;
         bottom: -29px;
-        left: 50%;
+        left: calc(50% - 1px);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
@@ -425,6 +426,12 @@
 .slider-dots--1 {
     top: 335px;
     left: 0;
+    .slider-dots__content {
+        transform: translateX(0);
+        &::before {
+            left: 0;
+        }
+    }
 }
 
 .slider-dots--2 {
