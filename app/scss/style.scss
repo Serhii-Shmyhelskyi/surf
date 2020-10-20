@@ -263,10 +263,13 @@
 }
 
 .surf-box {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 750px;
+    &__wraper {
+         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 750px;
+    }
+   
     &__inner {
         min-height: 750px;
         background: rgba(#1C2121, .85);
@@ -429,7 +432,7 @@
     .slider-dots__content {
         transform: translateX(0);
         &::before {
-            left: 0;
+            left: -0.5px;
         }
     }
 }

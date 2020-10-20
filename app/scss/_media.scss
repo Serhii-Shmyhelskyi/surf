@@ -42,7 +42,6 @@
     }
     .slider-dots--1 {
         top: 266px;
-        left: 0;
         .slider-dots__content {
             transform: translateX(0);
             &::before {
@@ -52,51 +51,33 @@
     }
     
     .slider-dots--2 {
-        top: 270px;
-        left: 0;
-        .slider-dots__circle{
-            position: relative;
-            &::before {
-                content: "";
-                position: absolute;
-                right: 50px;
-                background-image: url(../images/mini-marker.png);
-                width: 14px;
-                height: 17px;
-                background-size: cover;
-                right: -15px;
-                top: -25px;
-            }
-        }
+        top: 232px;
     }
     
     .slider-dots--3 {
-        top: 330px;
-        left: 25px;
+        top: 253px;
     }
     
     .slider-dots--4 {
-        top: 470px;
-        left: -25px;
+        top: 390px;
     }
     
     .slider-dots--5 {
-        top: 230px;
-        left: -65px;
+        top: 180px;
     }
     
     .slider-dots--6 {
-        top: 550px;
-        left: -120px;
+        top: 449px;
+        left: -85px;
     }
     
     .slider-dots--7 {
-        top: 375px;
-        left: -95px;
+        top: 312px;
+        left: -85px;
     }
     
     .slider-dots--8 {
-        top: 470px;
+        top: 397px;
         left: 35px;
     }
 }
@@ -155,6 +136,46 @@
     }
     .slider-arrows__left {
         right: 60px;
+    }
+}
+
+@media (max-width:1102px) {
+    .slider-map {
+        background-image: none;
+        min-width: 100%;
+        min-height: 280px;
+    }
+    .slider-dots__circle {
+        display: none;
+    }
+    .slider-dots__content {
+        display: block;
+        &::before {
+            display: none;
+        }
+    }
+    .slider-dots {
+        position: static;
+    }
+    .slider-map {
+        .slick-list {
+            overflow: hidden;
+            min-height: 280px;
+        }
+        .slick-track {
+            min-height: 280px;
+        }
+    }
+    .slider-dots__content, .slider-dots--8 .slider-dots__content {
+        transform: translateX(0);
+    }
+    .slider-dots__content {
+        transform: translateX(0);
+        width: 285px;
+        padding: 28px 31px 0 32px;
+    }
+    .slider-map .slick-current .slider-dots__content {
+        background: rgba(#ccc,0.5);
     }
 }
 
@@ -232,6 +253,10 @@
     .slider-dotshead {
         display: none;
     }
+}
+
+@media (max-width: 1040px) {
+
 }
 
 @media (max-width:766px) {
